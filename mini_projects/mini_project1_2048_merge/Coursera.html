@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://class.coursera.org/principlescomputing1-004/wiki/view?page=2048_(Merge) -->
+<html xmlns:fb="http://ogp.me/ns/fb#" itemtype="http://schema.org" class="supports-svg"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE7"><meta name="fragment" content="!"><meta name="robots" content="NOODP"><meta charset="utf-8"><meta property="og:title" content="Coursera"><meta property="og:type" content="website"><meta property="og:image" content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png"><meta property="og:url" content="https://www.coursera.org/wiki/view?page=2048_(Merge)"><meta property="og:site_name" content="Coursera"><meta property="og:locale" content="en_US"><meta property="og:description" content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits."><meta property="fb:admins" content="727836538,4807654"><meta property="fb:app_id" content="274998519252278"><meta name="twitter:site" content="Coursera"><meta name="twitter:app:name:iphone" content="Coursera"><meta name="twitter:app:name:ipad" content="Coursera"><meta name="twitter:app:name:googleplay" content="Coursera"><meta name="twitter:app:id:iphone" content="id736535961"><meta name="twitter:app:id:ipad" content="id736535961"><meta name="twitter:app:id:googleplay" content="org.coursera.android"><meta name="description" content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits."><meta name="image" content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png"><meta name="apple-itunes-app" content="app-id=736535961"><title>Coursera</title>    <link href="./Coursera_files/spark.main.css" rel="stylesheet" type="text/css">
+      <link href="./Coursera_files/course.css" rel="stylesheet" type="text/css">
+    <link href="https://spark-public.s3.amazonaws.com/principlescomputing1/static/images/favicon.ico" rel="icon">
+<script type="text/javascript" async="" src="./Coursera_files/ga.js"></script><script type="text/javascript" src="./Coursera_files/MathJax.js"></script><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/routes" src="./Coursera_files/routes.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; border: 0; padding: 0; margin: 0}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0 !important; padding: 0 !important; margin: 0 !important; vertical-align: 0 !important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap ! important}
+.MathJax img {display: inline ! important; float: none ! important}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block; overflow: hidden; width: 1px; height: 60ex}
+.MathJax .MathJax_EmBox {display: block; overflow: hidden; width: 1px; height: 60em}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Main; src: url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Main; src: url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype'); font-weight: bold}
+@font-face {font-family: MathJax_Main; src: url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype'); font-style: italic}
+@font-face {font-family: MathJax_Math; src: url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype'); font-style: italic}
+@font-face {font-family: MathJax_Caligraphic; src: url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size1; src: url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size2; src: url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size3; src: url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size4; src: url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://duqnjvq4jwr55.cloudfront.net/2.1/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
+</style><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Coursera"><meta name="twitter:description" content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits."><meta name="twitter:image:src" content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/lib/204" src="./Coursera_files/204.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/lib/400" src="./Coursera_files/400.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/student-page" src="./Coursera_files/student-page.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/student-page.html" src="./Coursera_files/student-page.html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bundles/assess/assessmentTypes/sparkSurveyQuestions/sparkSurveyQuestionsSessionModel" src="./Coursera_files/sparkSurveyQuestionsSessionModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bundles/assess/assessmentTypes/quickQuestions/sessionModel" src="./Coursera_files/sessionModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bundles/assess/assessmentTypes/SessionModel" src="./Coursera_files/sessionModel(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bundles/assess/framework/QuestionCollection" src="./Coursera_files/QuestionCollection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bundles/assess/framework/QuestionModel" src="./Coursera_files/QuestionModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bundles/assess/lib/backbone.hascollections" src="./Coursera_files/backbone.hascollections.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/lib/underscore.extend" src="./Coursera_files/underscore.extend.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/nls/student-page" src="./Coursera_files/student-page(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/header" src="./Coursera_files/header.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/sidebar" src="./Coursera_files/sidebar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/lib/readme" src="./Coursera_files/readme.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/header.html" src="./Coursera_files/header.html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/analytics/models/LearnerStoriesCollection" src="./Coursera_files/LearnerStoriesCollection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark-survey/assessApi" src="./Coursera_files/assessApi.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/sidebar.html" src="./Coursera_files/sidebar.html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="spark/app/signature/js/signature_track" src="./Coursera_files/signature_track.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/analytics/models/LearnerStoryModel" src="./Coursera_files/LearnerStoryModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="spark/app/signature/js/signatureTrackLastChanceModal.html" src="./Coursera_files/signatureTrackLastChanceModal.html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="spark/app/signature/js/flexjoinLastChanceModal.html" src="./Coursera_files/flexjoinLastChanceModal.html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/lib/util" src="./Coursera_files/util.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/lib/path" src="./Coursera_files/path.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/nls/header" src="./Coursera_files/header(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/nls/sidebar" src="./Coursera_files/sidebar(1).js"></script><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuTitle {background-color: #CCCCCC; margin: -5px 0 0 0; text-align: center; font-style: italic; font-size: 80%; color: #444444; padding: 2px 0; overflow: hidden}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style></head><body><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div><div id="fb-root"></div><div id="spark-help" class="hide"></div><a href="https://learner.coursera.help/hc/requests/new" target="_blank"><div style="z-index: 1" data-networkprioritysupportwidget="" role="button" class="helpwidget-tab hide">Premium Support</div></a><!-- - track IE8 and less browser for eventing purposes--><!--[if lte IE 8]><script>window._204 = window._204 || [];
+window._gaq = window._gaq || [];
+window._gaq.push(
+    ['_setAccount', 'UA-28377374-1'],
+    ['_setDomainName', window.location.hostname],
+    ['_setAllowLinker', true],
+    ['_trackPageview', window.location.pathname]);
+window._204.push(
+  ['client', 'home'],
+  {key:"pageview", value:window.location.pathname});</script><script src="https://dw0ugk4msqulk.cloudfront.net/385a154cdc58d9ca735efde1aee45020f4886fb0/js/lib/204.js"></script><script src="https://ssl.google-analytics.com/ga.js"></script><![endif]--><div id="fb-root"></div><div id="origami" data-js="origami"><div><div><div class="coursera-page"><div role="menubar" class="coursera-header"><div class="hidden">This page features MathJax technology to render mathematical formulae.
+If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.</div><h1 class="hidden">Principles of Computing (Part 1)</h1><!-- UNTIL dashboard announcement expires 2014-12-01 (then delete this code)--><div class="helpcenter-announcement"><div data-readme="helpcenter-announcement" data-readme-show-count="1" data-readme-show-until-closed="data-readme-show-until-closed" data-readme-expires="Mar 31, 2015" class="readme" style="visibility: visible; display: none;"><div>Need technical help? Visit our new <a href="https://learner.coursera.help/" data-readme-close="data-readme-close">Learner Help Center!</a></div><div data-readme-close="data-readme-close" class="readme-close-icon"><span class="icon-remove"></span></div></div></div><div role="banner" class="course-topbar container-fluid"><div class="row-fluid"><div class="span3"><a href="https://www.coursera.org/" data-if-linkable="add-referrer" class="course-topbar-logo"></a></div><div style="float:right;" class="course-topbar-nav-container span9"><h2 class="hidden">Top Navigation Bar</h2><ul class="course-topbar-nav-list"><li class="course-topbar-nav-list-item"><a href="https://www.coursera.org/courses" data-if-linkable="add-referrer">Courses</a></li><li tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" aria-owns="course-topbar-my" data-popup="#course-topbar-my" data-popup-bind-open="mouseenter" data-popup-close="data-popup-close" style="cursor:pointer;" data-popup-direction="se" class="course-topbar-nav-list-item"><a data-user-id="2499120">Alok Juneja<i class="icon-caret-down"></i></a></li></ul></div></div><div id="course-topbar-aboutus" class="course-topbar-sublist"><a href="https://www.coursera.org//about/" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">About Us</a><a href="https://www.coursera.org//about/careers" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">Careers</a><a href="https://www.coursera.org//about/people" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">People</a><a href="https://www.coursera.org//about/contact" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">Contact Us</a></div><div id="course-topbar-my" class="course-topbar-sublist"><a data-popup-close="data-popup-close" href="https://www.coursera.org/" target="_new" class="course-topbar-sublist-item">My Courses</a><a data-popup-close="data-popup-close" href="https://www.coursera.org/account/profile" target="_new" class="course-topbar-sublist-item">Profile</a><a data-popup-close="data-popup-close" href="https://www.coursera.org/account/accomplishments" target="_new" class="course-topbar-sublist-item">Course Records</a><a href="https://www.coursera.org/account/settings" target="_new" class="course-topbar-sublist-item">Settings</a><a href="https://class.coursera.org/principlescomputing1-004/class/preferences" class="course-topbar-sublist-item">Course Preferences</a><form action="https://class.coursera.org/api/logoutSsr/v1?csrf3-token=1445233983.kTQNnrUt11XMDGXa" method="post"><button data-popup-close="data-popup-close" type="submit" class="course-topbar-sublist-item">Sign Out</button></form></div></div><div class="course-topbanner-wrapper"><div class="course-topbanner"><div class="course-topbanner-university-logo"><a href="https://www.coursera.org/rice" target="_blank" data-if-linkable="add-referrer" title="https://www.coursera.org/rice" class="coursera-university-color"><img src="./Coursera_files/university_logo" alt="rice"></a></div><h1 class="course-topbanner-header"><a href="https://class.coursera.org/principlescomputing1-004/" data-if-linkable="modal-lock" class="course-topbanner-name coursera-university-color">Principles of Computing (Part 1)</a><br><span style="" class="course-topbanner-instructor">by Scott Rixner, Joe Warren, Luay Nakhleh</span></h1></div></div></div><div style="position:relative;" class="container-fluid"><div class="row-fluid"><div id="course-page-sidebar" role="navigation"><div role="menubar" class="coursera-sidebar"><div id="course-page-sidebar" role="navigation"><div class="course-navbar-container"><a href="https://class.coursera.org/principlescomputing1-004" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_index"><img src="./Coursera_files/logo" style="width: 205px;height: 116px;margin: -15px 0px 8px 1px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);" alt="Course Home Page"></a><div data-coursera-course-search-nav-widget="data-coursera-course-search-nav-widget" class="input-append course-search-nav-box"><form method="get" action="https://class.coursera.org/principlescomputing1-004/class/search" data-js-search-form="data-js-search-form" class="form-inline minimized-search"><label for="course-search-nav-input" class="accessible-text-for-reader">Search this course</label><input id="course-search-nav-input" type="text" name="q" data-js-search-input="data-js-search-input">&nbsp;<button type="submit" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="search" class="btn icon-search"><span class="accessible-text-for-reader">Search</span></button></form></div><h2 class="hidden">Side Navigation Bar</h2><ul class="course-navbar-list"><li class="course-navbar-item in-class-qqs-tab"><a href="https://class.coursera.org/principlescomputing1-004/questions" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_" class="coursera-university-color"><span>Quick Questions</span><span></span><span class="in-class-qqs-number-display">15</span></a><div class="in-class-qqs-announcement"><div data-readme="in-class-qqs-announcement-principlescomputing1-004" data-readme-show-count="1" data-readme-show-until-closed="data-readme-show-until-closed" data-readme-type="custom" class="readme"><div class="arrow-left"></div><div class="readme-content"><span>Please help us improve this course by answering some quick questions!</span></div><div data-readme-close="data-readme-close" class="readme-close-icon"><span class="icon-remove"></span></div></div></div></li><li class="course-navbar-item in-class-qqs-tab"></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/class/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Home" class="coursera-university-color"><span>Home </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/quiz/index?quiz_type=survey" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Surveys" class="coursera-university-color"><span>Surveys </span><span></span></a></li><li class="course-navbar-item"><h3>Class</h3></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/lecture/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Video_Lectures" class="coursera-university-color"><span>Video Lectures </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/quiz/index?quiz_type=homework" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Homework" class="coursera-university-color"><span>Homework </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/assignment/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Mini-projects" class="coursera-university-color"><span>Mini-projects </span><span></span></a></li><li class="course-navbar-item"><h3>Tools</h3></li><li class="course-navbar-item"><a href="http://www.codeskulptor.org/" target="_blank" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_CodeSkulptor" class="coursera-university-color"><span>CodeSkulptor </span><span class="icon-share"></span><span class="accessible-text-for-reader">opens in new browser tab</span></a></li><li class="course-navbar-item"><h3>Practice and Help</h3></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/forum/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Discussion_Forums" class="coursera-university-color"><span>Discussion Forums </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/wiki/practice_activities" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Practice_Activities" class="coursera-university-color"><span>Practice Activities </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/wiki/helpful_pages" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Coding_Notes" class="coursera-university-color"><span>Coding Notes </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/wiki/video_notes" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Math_Notes" class="coursera-university-color"><span>Math Notes </span><span></span></a></li><li class="course-navbar-item"><h3>Administrivia</h3></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/wiki/honor_code" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Honor_Code_(Please_read!)" class="coursera-university-color"><span>Honor Code (Please read!) </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/wiki/faq" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_FAQ" class="coursera-university-color"><span>FAQ </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/wiki/Syllabus" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Syllabus" class="coursera-university-color"><span>Syllabus </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/principlescomputing1-004/wiki/course_staff" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Course_Staff" class="coursera-university-color"><span>Course Staff </span><span></span></a></li></ul><ul style="list-style-type:none;margin-left: 10px;"><li><a href="https://accounts.coursera.org/i/zendesk/courserahelp?return_to=https://learner.coursera.help/hc/" target="_blank" title="Open help articles in new window" class="coursera-university-color"><i class="icon-question-sign"></i>Help Center</a></li></ul><ul style="list-style-type:none;margin-left: 10px;"></ul></div></div></div></div><div id="course-page-content" role="main"><div id="spark" class="hide" style="display: block;">
+<h2 class="course-page-header">
+    2048 (Merge)    <a class="coursera-reporter-link" title="Click here if you&#39;re experiencing technical problems or found errors in the course materials." target="_blank" href="https://accounts.coursera.org/i/zendesk/courserahelp?return_to=https://learner.coursera.help/hc/">
+      Help Center
+    </a>
+    <a data-coursera-admin-helpwidget-link="" rel="help" href="https://class.coursera.org/mooc/help/pages/setup" title="Course Page Setup" style="display:none;">Learn more.</a>
+</h2>
+
+
+<h4>Overview</h4>
+
+<p> 
+2048 is a simple grid-based numbers game. The rules of the game are described <a href="https://class.coursera.org/principlescomputing1-004/wiki/2048_Game">here</a>.
+</p>
+
+<p>
+In the first two assignments, we will implement a version of the 2048 game.  Although the original game is played on a <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-1-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-1"><span style="display: inline-block; position: relative; width: 37px; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(32.4px 17080px 50px -8.5px); top: -47px; left: 0px;"><span class="mrow" id="MathJax-Span-2"><span class="mn" id="MathJax-Span-3" style="font-family: MathJax_Main;">4</span><span class="mo" id="MathJax-Span-4" style="font-family: MathJax_Main; padding-left: 3.8px;">×</span><span class="mn" id="MathJax-Span-5" style="font-family: MathJax_Main; padding-left: 3.8px;">4</span></span><span style="display: inline-block; width: 0px; height: 47px;"></span></span></span><span style="border-left-width: 0px; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 13.6px; vertical-align: -1px;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-1">4 \times 4</script> grid, your version should be able to have an arbitrary height and width.  In this first assignment, we will focus on only one aspect of the game: merging tiles.
+</p>
+
+<p>
+We have provided the following <a href="http://www.codeskulptor.org/#poc_2048_merge_template.py" target="_blank">template</a> that contains the basic code that you will need to implement the merge function.  The signature (name and parameters) of the functions in this file must remain unchanged, but you may add any additional functions or other code that you need to. 
+</p>
+
+<h4>Coding Style</h4>
+
+<p>
+In this class, you will be asked to strictly follow a set of <a href="https://class.coursera.org/principlescomputing1-004/wiki/view?page=style_guidelines">coding style guidelines</a>.  Good programmers not only get their code to work, but they also write it in a way that enables others to easily read and understand their code.  Please read the style guidelines carefully and get into the habit of following them right from the start.
+</p>
+
+<h4>Testing Your Code</h4>
+
+<p>
+As always, testing is a critical part of the process of building your mini-project.  Remember you should be testing your code as you write it.  Don't try to implement everything and then test,  You will have lots of errors that all interact in strange ways that make your program very hard to debug.
+</p>
+
+<p>
+Throughout this course, we will be using a machine grader (OwlTest) to help you assess your code.  You can submit your code to this <a href="http://codeskulptor.appspot.com/owltest/?urlTests=poc.poc_2048_merge_tests.py&urlPylintConfig=poc.pylint_config.py" target="">Owltest</a> page.  The OwlTest page has a pale yellow background and does <b>not</b> submit your project to Coursera.  OwlTest is just meant to allow you to test your mini-project automatically.  Note that trying to debug your mini-project using the tests in OwlTest can be very tedious since they are slow and give limited feedback.  Instead, we <i>strongly</i> suggest that you first test your program using your own tests.  To get you started, there are some tests for this project given at the end of the description.
+</p>
+
+<p>
+Remember that OwlTest uses <a href="http://www.pylint.org/">Pylint</a> to check that you have followed the <a href="https://class.coursera.org/principlescomputing1-004/wiki/view?page=style_guidelines">coding style guidelines</a> for this class. Deviations from these style guidelines will result in deductions from your final score.  Please read the feedback from Pylint closely.  If you have questions, feel free to consult <a href="https://class.coursera.org/principlescomputing1-004/wiki/view?page=pylint_errors">this page</a> and the class forums.
+</p>
+
+<p>
+When you are ready to submit your code to be graded formally, submit your code to the CourseraTest page for this mini-project that is linked on the main assignment page.  Note that the CourseraTest page looks similar to the OwlTest page, but they are <em>not</em> the same!  The CourseraTest page has a <b>white</b> background and does submit your grade to Coursera.
+</p>
+
+<h4>Merge</h4>
+<p>
+For this assignment, you will implement a function <code>merge(line)</code> that models the process of merging all of the tile values in a single row or column.  This function takes the list <code>line</code> as a parameter and returns a new list with the tile values from <code>line</code> slid towards the front of the list and merged. Note that you should return a <em>new</em> list and you should <em>not</em> modify the input list.  This is one of the more challenging parts of implementing the game.  
+</p>
+<p>
+In this function, you are <em>always</em> sliding the values in the list towards the front of the list (the list position with index <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-2-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-6"><span style="display: inline-block; position: relative; width: 9px; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(32.6px 17080px 50.4px -8.3px); top: -47px; left: 0px;"><span class="mrow" id="MathJax-Span-7"><span class="mn" id="MathJax-Span-8" style="font-family: MathJax_Main;">0</span></span><span style="display: inline-block; width: 0px; height: 47px;"></span></span></span><span style="border-left-width: 0px; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 13.8px; vertical-align: -1.4px;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-2">0</script>).  You will make sure you order the entries in <code>line</code> appropriately when you call this function later in the next assignment.  Empty grid squares with no displayed value will be assigned a value of zero in our representation.
+</p>
+<p>
+For example, if a row of the board started as follows:
+</p>
+<p>
+<img src="./Coursera_files/poc_2022.png" width="200"></p>
+<p>
+And you slide the tiles left, the row would become:
+</p>
+<p>
+<img src="./Coursera_files/poc_4200.png" width="200"></p>
+<p>
+Note that the two leftmost tiles merged to become a 4 and the third 2 just slides over next to the 4.
+</p>
+<p>
+A given tile can only merge once on any given turn, although many pairs of tiles could merge on a single turn.
+</p>
+<p>
+For the above example, the input to the <code>merge</code> function would be the list <code>[2, 0, 2, 2]</code>.  The function should then produce the output <code>[4, 2, 0, 0]</code>.  We suggest you begin to implement this function as follows:
+</p>
+<p>
+</p>
+<ol>
+<li>Start with a result list that contains the same number of <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-3-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-9"><span style="display: inline-block; position: relative; width: 9px; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(32.6px 17080px 50.4px -8.3px); top: -47px; left: 0px;"><span class="mrow" id="MathJax-Span-10"><span class="mn" id="MathJax-Span-11" style="font-family: MathJax_Main;">0</span></span><span style="display: inline-block; width: 0px; height: 47px;"></span></span></span><span style="border-left-width: 0px; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 13.8px; vertical-align: -1.4px;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-3">0</script>'s as the length of the <code>line</code> argument.
+</li>
+<li>Iterate over the <code>line</code> input looking for non-zero entries.  For each non-zero entry, put the value into the next available entry of the result list (starting at position 0).
+</li>
+</ol>
+<p>
+Notice if you only follow this process, you would end up with the result <code>[2, 2, 2, 0]</code>.  
+</p>
+<p>
+Now you should think through what you should add to your function in order to merge tiles.  Keep in mind, however, that any tile should only be merged once and that these merges should happen in order from lowest index to highest index.  For instance, on the input <code>[2, 0, 2, 4]</code>, the result should be <code>[4, 4, 0, 0]</code>, <b>not</b> <code>[8, 0, 0, 0]</code>.
+</p>
+<p>
+Note that there are many ways to implement the <code>merge</code> function.  The objective of this project is for you to use what you've learned in our previous classes to implement a complex function.  You have already learned all of the Python required to implement <code>merge</code>, so the challenge is to think carefully about what the function does and how to best accomplish that.
+</p>
+<p>
+Here is one basic strategy to implement the merge function:
+</p>
+<ol>
+<li>Iterate over the input and create an output list that has all of the non-zero tiles slid over to the beginning of the list with the appropriate number of zeroes at the end of the list.</li>
+<li>Iterate over the list created in the previous step and create another new list in which pairs of tiles in the first list are replaced with a tile of twice the value and a zero tile.</li>
+<li>Repeat step one using the list created in step two to slide the tiles to the beginning of the list again.</li>
+</ol>
+<p>
+This is <em>not</em> the most efficient way of implementing <code>merge</code>.  While it is fine to implement it in this way, we challenge you to think of other ways of doing it that do not require creating so many lists.  Ultimately, how you approach the problem is up to you.
+</p>
+<p>
+As you work on your <code>merge</code> function, here are some simple tests you should try:
+</p>
+<ul>
+<li>
+<code>[2, 0, 2, 4]</code> should return <code>[4, 4, 0, 0]</code>
+</li>
+<li>
+<code>[0, 0, 2, 2]</code> should return <code>[4, 0, 0, 0]</code>
+</li>
+<li>
+<code>[2, 2, 0, 0]</code> should return <code>[4, 0, 0, 0]</code>
+</li>
+<li>
+<code>[2, 2, 2, 2, 2]</code> should return <code>[4, 4, 2, 0, 0]</code>
+</li>
+<li>
+<code>[8, 16, 16, 8]</code> should return <code>[8, 32, 8, 0]</code>
+</li>
+</ul>
+<p>
+These tests are by no means exhaustive and are just meant to get you started.
+</p>
+<hr>
+<div>
+    <div style="float:left">
+    	    	    </div>
+    <div style="float:right;text-align:right;font-size:10px;">
+    	Created Tue 27 Jan 2015  6:57 PM CET<br>
+    	Last Modified Tue 18 Aug 2015 11:01 PM CEST    </div>
+</div>
+<script type="text/x-mathjax-config;executed=true">
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  
+  styleSheets: [],
+  styles: {},
+
+  jax: ["input/TeX"],
+  
+  extensions: ["tex2jax.js"],
+
+  preJax: null,
+  postJax: null,
+
+  preRemoveClass: "MathJax_Preview",
+
+  showProcessingMessages: true,
+
+  messageStyle: "none",
+  
+  displayAlign: "center",
+  displayIndent: "0em",
+  
+  delayStartupUntil: "none",
+
+  skipStartupTypeset: false,
+  
+  elements: [],
+  
+  tex2jax: {
+	    inlineMath: [
+	                 ['$$','$$'],      // uncomment this for standard TeX math delimiters
+	                 ['\\(','\\)']
+	                 ],
+
+	                 displayMath: [
+	                 ['\\[','\\]']
+	                 ],
+
+    skipTags: ["script","noscript","style","textarea","pre","code"],
+    ignoreClass: "tex2jax_ignore",
+    processClass: "tex2jax_process",
+    processEscapes: false,
+    processEnvironments: true,
+    preview: "TeX"
+    
+  },
+  
+  mml2jax: {
+    preview: "alttext"
+    
+  },
+  
+  jsMath2jax: {
+    preview: "TeX"
+    
+  },
+
+  TeX: {
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    Macros: {},
+
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+    
+  },
+
+  //============================================================================
+  //
+  //  These parameters control the MathML inupt jax.
+  //
+  MathML: {
+    //
+    //  This specifies whether to use TeX spacing or MathML spacing when the
+    //  HTML-CSS output jax is used.
+    //
+    useMathMLspacing: false
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the HTML-CSS output jax.
+  //
+  "HTML-CSS": {
+    
+    scale: 100,
+    
+    availableFonts: ["STIX","TeX"],
+    
+    preferredFont: "TeX",
+    
+    webFont: "TeX",
+    
+    imageFont: "TeX",
+    
+    undefinedFamily: "STIXGeneral,'Arial Unicode MS',serif",
+      
+    showMathMenu: true,
+
+    styles: {},
+    
+    tooltip: {
+      delayPost: 600,          // milliseconds delay before tooltip is posted after mouseover
+      delayClear: 600,         // milliseconds delay before tooltip is cleared after mouseout
+      offsetX: 10, offsetY: 5  // pixels to offset tooltip from mouse position
+    }
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the NativeMML output jax.
+  //
+  NativeMML: {
+
+    scale: 100,
+
+    showMathMenu: true,
+    showMathMenuMSIE: true,
+
+    styles: {}
+  },
+  
+  MathMenu: {
+    delay: 400,
+    
+    helpURL: "http://www.mathjax.org/help/user/",
+
+    showRenderer: true,
+    showFontMenu: false,
+    showContext:  false,
+
+    windowSettings: {
+      status: "no", toolbar: "no", locationbar: "no", menubar: "no",
+      directories: "no", personalbar: "no", resizable: "yes", scrollbars: "yes",
+      width: 100, height: 50
+    },
+    
+    styles: {}
+    
+  },
+
+  MMLorHTML: {
+    prefer: {
+      MSIE:    "MML",
+      Firefox: "HTML",
+      Opera:   "HTML",
+      other:   "HTML"
+    }
+  }
+});
+</script>
+</div></div></div></div></div><div class="coursera-footer"></div></div></div></div><!--[if gte IE 9]><script>document.getElementById("coursera-loading-js").style.display = 'block';</script><![endif]-->
+<!--[if lte IE 8]><script>document.getElementById("coursera-loading-nojs").style.display = 'block';</script><![endif]-->
+<!--[if !IE]> --><script>document.getElementById("coursera-loading-js").style.display = 'block';</script><!-- <![endif]--><script>if (/zh/i.test(window.localStorage ? localStorage.getItem('locale') : '') || '{{ locale }}') {
+  document.getElementById('get-browser-zh').style.display = 'block';
+}</script><!--[if !IE]> --><script>document.getElementById('coursera-loading-js').style.display = 'block';</script><!-- <![endif]-->
+    <script src="./Coursera_files/jquery.v1-7.js"></script>
+      <script src="./Coursera_files/loadOrRefreshMathJax.js"></script>
+      <script src="./Coursera_files/textbook_wiki.js"></script>
+  <script src="./Coursera_files/require.v2-1-1.js"></script><script data-baseurl="https://dw0ugk4msqulk.cloudfront.net/385a154cdc58d9ca735efde1aee45020f4886fb0/" data-version="385a154cdc58d9ca735efde1aee45020f4886fb0" data-timestamp="1444145420392" data-debug="0" data-locale="en_US" id="_require">if(document.getElementById('coursera-loading-js').style.display == 'block') {
+  (function(el) {
+     require.config({
+       //enforceDefine: true,
+       waitSeconds: 75,
+       baseUrl: el.getAttribute('data-baseurl'),
+       urlArgs: el.getAttribute('data-debug') == '1' ? 'v=' + el.getAttribute('data-timestamp') : '',
+       shim: {
+          'underscore': {
+             exports: '_'
+          },
+          'backbone': {
+             deps: ['underscore', 'jquery'],
+             exports: 'Backbone',
+             init: function(_, $) {
+               Backbone.$ = $;
+               return Backbone;
+             }
+          },
+          'pages/hg/thirdparty/js/backbone.marionette': {
+            deps: ['backbone']
+          },
+          'pages/hg/thirdparty/js/webshims/polyfiller': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/webshims/extras/mousepress': {
+            deps: ['jquery', 'pages/hg/thirdparty/js/webshims/polyfiller']
+          },
+          'pages/hg/thirdparty/js/jquery.throttle': {
+            deps: ['jquery']
+          },
+          'js/lib/jquery.linkify': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/js/bootstrap/alert': {
+            deps: ['jquery', 'pages/hg/thirdparty/js/bootstrap/transition']
+          },
+          'spark/core/js/jquery_ui': {
+            deps: ['jquery']
+          },
+          'spark/core/js/jquery.history': {
+            deps: ['jquery']
+          },
+          'js/lib/bootstrap.tooltip': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/bootstrap/transition': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/bootstrap/tab': {
+            deps: ['jquery']
+          },
+          'bundles/videojs/lib/video.4.3.0': {
+            exports: 'vjs'
+          }
+       },
+       paths: {
+          'q': 'js/vendor/q.v1-0-1',
+          'react-with-addons': 'js/vendor/react-with-addons.v0-12',
+          'jquery':                         'pages/spark/jquery',
+          'underscore':                     'js/vendor/underscore.v1-5-2',
+          'backbone':                       'js/vendor/backbone.v1-1-0',
+          'backbone.relational':            'js/lib/backbone.relational.0.8.6',
+          'i18n':                           'js/lib/i18n._t',
+          'css':                            'js/vendor/require.css.v0-1-2',
+          'memoize':                        'js/lib/require.memoize.v0-0-1',
+          'pages/spark/models/user.json':   'empty:',
+          'pages/spark/models/course.json': 'empty:',
+          'pages/spark/models/navbar.json': 'empty:'
+       },
+       callback: function() {
+                    require(['pages/spark/routes']);
+                },
+       config: {
+         i18n: {
+           locale: (window.localStorage ? localStorage.getItem('locale') : '') || el.getAttribute('data-locale')
+         }
+       }
+     });
+  })(document.getElementById('_require'));
+}
+</script><script>define('pages/spark/models/user.json', [], function(){
+      return JSON.parse("{\"id\":2499120,\"email_address\":\"junejaalok@gmail.com\",\"full_name\":\"Alok Juneja\",\"locale\":\"en_US\",\"timezone\":\"Europe\\\/Berlin\",\"access_group_id\":\"4\",\"registration_time\":\"1436792634\",\"last_access_time\":\"1444628384\",\"last_access_ip\":\"130.229.48.101\",\"signature_track_register_time\":\"0\",\"email_announcement\":\"1\",\"email_forum\":\"1\",\"in_signature_track\":\"0\",\"wishes_proctored_exam\":\"0\",\"first_name\":\"Alok\",\"permissions\":[\"default\",\"allow_site_access\"],\"group\":\"Student\",\"anonymous\":false,\"forum_title\":\"Student\",\"signature_track_state\":1,\"verified_quizzes\":[\"29\"],\"submitted_quizzes\":[\"23\",\"27\",\"29\",\"31\",\"175\"],\"scheduled_proctored_exam\":null,\"last_chance_modal\":1,\"flexjoin_last_chance_modal\":null}");
+  });
+define('pages/spark/models/course.json', [], function(){
+      return JSON.parse("{\"id\":975647,\"isPrivate\":false,\"type\":\"public\",\"name\":\"Principles of Computing (Part 1)\",\"instructor\":\"Scott Rixner, Joe Warren, Luay Nakhleh\",\"sessionName\":\"principlescomputing1-004\",\"externalBaseURL\":\"https:\\\/\\\/www.coursera.org\\\/\",\"shortname\":\"principlescomputing1\",\"host\":\"https:\\\/\\\/www.coursera.org\\\/\",\"assetUnversionedLink\":\"https:\\\/\\\/dw0ugk4msqulk.cloudfront.net\\\/\",\"cheggID\":\"\",\"hasLTI\":true,\"badgevilleDomain\":\"\",\"linkable\":false,\"universityShortname\":\"rice\",\"signatureTrackStatus\":{\"signature_track_enabled\":1},\"courseURLs\":{\"log_in_link\":\"https:\\\/\\\/www.coursera.org\\\/login?post_redirect=https%3A%2F%2Fwww.coursera.org%2Flogin%3Fuser_action%3Dclass%26course_id%3D975647%26post_redirect%3Dhttps%253A%252F%252Fclass.coursera.org%252Fprinciplescomputing1-004%252Fauth%252Fauth_redirector%253Ftype%253Dlogin%2526subtype%253Dnormal%2526visiting%253D\",\"sign_up_link\":\"https:\\\/\\\/www.coursera.org\\\/signup?enroll_cid=975647&enroll_sn=principlescomputing1&enroll_n=Principles of Computing (Part 1)\",\"view_course_info_link\":\"https:\\\/\\\/www.coursera.org\\\/course\\\/principlescomputing1\",\"sign_up_link_cant_enroll\":\"https:\\\/\\\/www.coursera.org\\\/signup?post_redirect=https%3A%2F%2Fwww.coursera.org%2Fcourse%2Fprinciplescomputing1\"},\"courseBase\":\"https:\\\/\\\/class.coursera.org\\\/principlescomputing1-004\\\/\",\"search\":true,\"hideWiki\":true,\"aceStartRegistrationDate\":\"Thu  1 Jan 1970  1:00 AM CET\",\"aceEndRegistrationDate\":\"Thu  1 Jan 1970  1:00 AM CET\",\"aceExamStartDate\":\"Thu  1 Jan 1970  1:00 AM CET\",\"aceExamEndDate\":\"Thu  1 Jan 1970  1:00 AM CET\",\"aceExamRules\":\"\",\"aceExamDuration\":\"\",\"aceBeforeExam\":false,\"aceAfterExam\":true,\"aceHours\":null,\"aceCreditType\":\"\",\"acePrice\":null,\"aceExamID\":null,\"aceEligible\":false,\"canRegisterForACE\":false,\"specialization\":{\"numCourse\":6,\"image\":\"https:\\\/\\\/d15cw65ipctsrr.cloudfront.net\\\/36\\\/f74e20a2a811e4ba29d775ee5247cc\\\/FoC-Spsn-logo.jpg\",\"id\":37,\"short_name\":\"fundamentalscomputing2\",\"name\":\"Fundamentals of Computing\"},\"supportForums\":true,\"textbooks\":\"\",\"inVideoQuizV2\":true,\"in_flexjoin\":1,\"honorCodeExtraText\":\"\",\"honorCodeCustomTitle\":\"\",\"honorCodeCustomButton\":\"\",\"studentAccessDisabled\":0,\"disableQQs\":false}");
+  });
+  define('pages/spark/models/navbar.json', [], function(){
+      return JSON.parse("{\"items\":[{\"name\":\"Home\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"class:index\"},{\"name\":\"Surveys\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"quiz:index?quiz_type=survey\"},{\"name\":\"Class\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Video Lectures\",\"icon\":\"home\",\"link_type\":\"circuit\",\"link_data\":\"lecture:index\"},{\"name\":\"Homework\",\"icon\":\"lecture\",\"link_type\":\"circuit\",\"link_data\":\"quiz:index?quiz_type=homework\"},{\"name\":\"Mini-projects\",\"icon\":\"assignment\",\"link_type\":\"circuit\",\"link_data\":\"assignment:index\"},{\"name\":\"Tools\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"CodeSkulptor\",\"icon\":\"\",\"link_type\":\"window_link\",\"link_data\":\"http:\\\/\\\/www.codeskulptor.org\"},{\"name\":\"Practice and Help\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Discussion Forums\",\"icon\":\"forum\",\"link_type\":\"circuit\",\"link_data\":\"forum:index\"},{\"name\":\"Practice Activities\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"practice_activities\"},{\"name\":\"Coding Notes\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"helpful_pages\"},{\"name\":\"Math Notes\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"video_notes\"},{\"name\":\"Administrivia\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Honor Code (Please read!)\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"honor_code\"},{\"name\":\"FAQ\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"faq\"},{\"name\":\"Syllabus\",\"icon\":\"wiki\",\"link_type\":\"wiki\",\"link_data\":\"Syllabus\"},{\"name\":\"Course Staff\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"course_staff\"}]}");
+  });
+</script><script>var coursera_enable_new_help_center = true;
+</script><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: MathJax_Main, sans-serif;"></div><div class="hide confirm-navigation modal"><div class="modal-header"><h3>Confirm Navigation</h3></div><div class="modal-body"><div class="confirm-navigation-message"></div><div>Are you sure you want to leave this page?</div></div><div class="modal-footer"><button data-modal-close="data-modal-close" class="btn confirm-navigation-stay">Stay on this Page</button><button data-modal-close="data-modal-close" class="btn btn-danger confirm-navigation-leave">Leave this Page</button></div></div><div class="coursera-async-message" style="display: none;"></div></body></html>
